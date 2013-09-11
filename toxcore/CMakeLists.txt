@@ -3,26 +3,32 @@ project(toxcore C)
 
 set(core_sources
 	DHT.c
-	network.c
-	Lossless_UDP.c
-	net_crypto.c
 	friend_requests.c
+	group_chats.c
 	LAN_discovery.c
+	Lossless_UDP.c
 	Messenger.c
-	util.c
+	net_crypto.c
+	network.c
 	ping.c
-        tox.c)
+	tox.c
+	util.c
+	)
 
 set(core_headers
 	DHT.h
-	network.h
-	Lossless_UDP.h
-	net_crypto.h
 	friend_requests.h
+	group_chats.h
 	LAN_discovery.h
+	Lossless_UDP.h
 	Messenger.h
+	misc_tools.h
+	net_crypto.h
+	network.h
+	ping.h
+	tox.h
 	util.h
-	ping.h)
+	)
 
 add_library(toxcore SHARED ${core_sources})
 add_library(toxcore_static ${core_sources})

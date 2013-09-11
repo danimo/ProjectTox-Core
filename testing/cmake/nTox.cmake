@@ -4,7 +4,7 @@ project(nTox C)
 set(exe_name nTox)
 
 add_executable(${exe_name}
-	nTox.c misc_tools.c)
+	nTox.c)
 
 target_link_libraries(${exe_name}
 	ncurses)
