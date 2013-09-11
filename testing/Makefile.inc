@@ -100,3 +100,4 @@ crypto_speed_test_LDADD = \
                         $(WINSOCK2_LIBS)
 
 EXTRA_DIST += 			$(top_srcdir)/testing/misc_tools.c
+
